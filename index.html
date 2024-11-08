@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phaser Test</title>
+
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background-color: #d9efd3;">
+    <div class="dark-container text-center py-5 px-4" style="border-radius: 0px 0px 20px 20px;">
+        <h1>
+            Spinach Sprint
+        </h1>
+        <p class="lead max-w-xl mx-auto" style="word-spacing: 2px;">
+            Spinaches are ready to be collected in a beautiful tropical island and only Popeye can get the job done. In
+            this game, our spinach lovin' hero must collect all fifteen Spinaches while dodging the Bluto's sinister wrath to
+            win the game.
+        </p>
+    </div>
+    <div class="row py-5 container mx-auto">
+        <div class="col-md-6">
+            <div class="dark-container rounded-4  mx-auto py-4">
+                <h3 class="text-center mb-4">
+                    Characters
+                </h3>
+                <div class="d-flex justify-content-center gap-5">
+                    <div>
+                        <img src="assets/sprites/popeye-2.png" alt="Popeye" width="50px">
+                        <p class="text-center">
+                            <strong>Popeye</strong>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/sprites/bluto.png" alt="Bluto" width="40px">
+                        <p class="text-center">
+                            <strong>Bluto</strong>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/sprites/spinach.png" alt="Spinach" width="50px">
+                        <p class="text-center">
+                            <strong>Spinach</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="dark-container rounded-4 w-75 h-100 px-2 mx-auto py-4">
+                <h3 class="text-center mb-2">
+                    Let's Play!
+                </h3>
+                <ul>
+                    <li>
+                        Use arrow keys to move around!
+                    </li>
+                    <li>
+                        Collect all fifteen Spinaches
+                    </li>
+                    <li>
+                        Avoid Bluto’s sinister wrath
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameTime" class="d-flex justify-content-center mb-4"></div>
+    <div id="bg"></div>
+
+    <div class="px-4 py-4 dark-container2">
+        <div class="container">
+            <h2 class="text-center mb-2">
+                Reflection
+            </h2>
+            <p class="text-center px-4" style="word-spacing: 2px;">
+                Since Popeye is my favorite cartoon character, it seemed like a perfect fit for the game. Creating the map in Tiled and getting my creative juices flowing was fun, and exploring
+                examples on itch.io really helped me come up with a perfect layout. Thanks to class
+                recordings, I was able to handle the JavaScript side easily. It may not be the best popeye-inspired
+                game out there, but it's got enough Spinaches to make Bluto jealous and Olive Oyl proud!
+            </p>
+        </div>
+    </div>
+
+    <div class="dark-container text-center pt-3 pb-2">
+        <p class="lead">
+            Made with ❤️ by Arda
+        </p>
+    </div>
+
+    <script src="js/gameTiled.js"></script>
+</body>
+
+</html>
